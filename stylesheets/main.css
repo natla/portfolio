@@ -136,6 +136,8 @@ ul.gallery-list{
 ul.gallery-list li{
 	width: auto;
 	box-sizing: border-box;
+	color: #ccc;
+	margin-bottom: 10px;
 }
 
 /* Typography
@@ -224,8 +226,8 @@ p a{
 }
 .home h2 {
   font-size: 36px;
-  margin-bottom: 12px;
 }
+
 .home p {
   font-size: 24px;
   font-weight: 100;
@@ -494,6 +496,11 @@ textarea {
 	background-size:cover;
 }
 
+.bg-sims {
+	background:url(../assets/images/projects/TheSims3_Screenshot.png);
+	background-size:cover;
+}
+
 .project-container h3 {
     overflow: hidden;
     height: 95px;
@@ -562,7 +569,11 @@ h3.purple strong, p.purple {
     color: #a496ff;
 }
 
-a.blue, a.red, a.purple {
+h3.green strong, p.green {
+	color: #49E281;
+}
+
+a.blue, a.red, a.purple, a.green {
     position: relative;
     z-index: 4;
     display: inline-block;
@@ -582,21 +593,23 @@ a.blue, a.red, a.purple {
 }
 
 .project-container a.blue:hover {
-    color: #fff;
 	border-color: #1482ff;
 	background: #1482ff;
 }
 
 .project-container a.purple:hover {
-    color: #fff;
 	border-color: #a496ff;
 	background: #a496ff;
 }
 
 .project-container a.red:hover {
-    color: #fff;
 	border-color: #ea4c4c;
 	background: #ea4c4c;
+}
+
+.project-container a.green:hover {
+	border-color: #25b144;
+	background: #25b144;
 }
 
 .project-container a .hover-progress{
@@ -621,6 +634,7 @@ a.blue, a.red, a.purple {
 
 .description-container {
 	margin-top:50px;
+	margin-bottom: 30px;
     height: 220px;
     text-align: center;
 }
