@@ -1,0 +1,640 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of CSS Reset
+....................*/
+
+/* GRID
+..................*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container,
+.grid{
+	margin: auto;	
+	width: 75%;
+}
+.container{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.col-thin{
+  width: 33.33%;
+}
+.col-fat {
+  width: 66.66%;
+}
+.col-thin, 
+.col-fat{
+	display: inline-block;
+	vertical-align: top;
+}
+.grid,
+.col-thin,
+.col-fat {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*  Rows
+  ..................*/
+
+.row,
+.row-alt {  
+  min-width: 960px;  
+}
+
+.row{
+  background: #fff;  
+  padding: 66px 0 44px 0;
+}
+
+.row-alt {
+   background: #cbe2c1;
+   background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+   background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+   background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+   padding: 44px 0 22px 0;
+ } 
+ 
+ /* Galery
+.................*/
+
+ .gallery{
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;  
+	align-items: stretch;
+}
+ 
+ main {    
+    width: 75%;   
+    margin: 0 auto;
+}
+
+ul.gallery-list{	
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(165px,1fr));
+    grid-column-gap: 2px;
+	flex-wrap: wrap;
+}
+
+ul.gallery-list li{
+	width: auto;
+	box-sizing: border-box;
+}
+
+/* Typography
+.................*/
+
+body{
+	background: #293f50;
+	color: #555;
+	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+li {
+	color: #888;
+}
+
+p, .resume li{
+	font-family: "Ubuntu", "Raleway", "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h3, h4, h5, p{
+	margin-bottom: 22px;
+}
+
+h1, h2, h3, h4 {
+  color: #648880;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+strong {
+  font-weight: 400;
+}
+cite, em {
+  font-style: italic;
+}
+
+/*  Links
+  ................*/
+  
+a {
+  color: #648880;
+  text-decoration: none;
+}
+a:hover {
+  color: #a9b2b9;
+}
+
+p a{
+  border-bottom: 1px solid #dfe2e5;
+}
+.primary-header a,
+.primary-footer a {
+  color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
+
+/* Home
+.................*/
+
+.home{
+  color: #fff;
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+  text-align: center;
+}
+.home h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+.home p {
+  font-size: 24px;
+  font-weight: 100;
+  font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.teaser a:hover h3 {
+  color: #a9b2b9;
+}
+.teaser img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%
+}
+
+.teaser h3 {
+	font-family: "Raleway", "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Buttons
+.................*/
+
+.btn{
+	border-radius: 5px;
+	display: inline-block;
+	margin: 0;
+	color: #fff;
+    cursor: pointer;
+	font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+.btn-alt {
+  border: 1px solid #fff;
+  padding: 8px 30px;
+}
+.btn-alt:hover {
+  background: #fff;
+  color: #648880;
+}
+.btn-default, .btn-form {
+  border: 0;
+  background: #648880;
+  padding: 9px 30px;
+  font-size: 14px;
+}
+.btn-default:hover {
+  background: #77a198;
+}
+.btn-form {
+	position: relative;
+	border: 1px solid #fff;
+}
+
+.btn-form :after {
+    content: '';
+    position: absolute;
+	top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+	background: #fff;
+	z-index: -1;
+}
+
+.btn-form , .btn-form :after{
+	-moz-transition: all 200ms cubic-bezier(.165,.84,.44,1);
+    -o-transition: all 200ms cubic-bezier(.165,.84,.44,1);
+    -webkit-transition: all 200ms cubic-bezier(.165,.84,.44,1);
+	transition: all 2000ms cubic-bezier(.165,.84,.44,1);
+}
+
+.btn-form:hover {
+  border: 1px solid #648880;
+  color: #648880;
+}
+
+.btn-form:hover:after {
+  width: 100%;
+	background: #fff;
+}
+
+ /* Primary header
+  ...................*/
+
+.logo {  
+  border-top: 4px solid #648880;
+  padding: 40px 0 22px 0;
+  font-size: 48px;
+  font-weight: 100;
+  letter-spacing: .5px;
+  line-height: 44px;
+  text-transform: uppercase;
+  float: left;
+}
+
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: right;
+}
+
+/*  Navigation
+ ....................*/
+
+.nav {
+  text-align: right;
+}
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+ 
+/*  Leads
+  ................*/
+
+.lead {
+  text-align: center;
+}
+.lead p {
+  font-size: 21px;
+  line-height: 33px;
+  font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Clearfix
+..................*/
+.wrap:before,
+.wrap:after {
+  content: "";
+  display: table;
+}
+.wrap:after {
+  clear: both;
+}
+.wrap{
+  clear: both;
+  *zoom: 1;
+ }
+ 
+/* Primary footer
+  ...................*/
+  
+.primary-footer {
+  color: #648880;
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+
+.primary-footer small { 
+  font-weight: 400;	
+  float: left;
+}
+
+/* Resume
+  ................*/
+  
+.resume-info {
+  border: 1px solid #dfe2e5;
+  border-radius: 5px;
+  height: 175px;
+  margin-top: 88px;
+  padding-bottom: 22px;
+  text-align: center;
+}
+.resume {
+  margin-bottom: 44px;
+}
+.resume-info img {
+  border-radius: 50%;
+  height: 130px;
+  margin: -66px 0 22px 0;
+  vertical-align:top;
+}
+
+.resume-info a {
+	font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.resume h5, #software h2{
+  text-align: center;
+}
+
+.resume p {
+  text-align: justify;
+}
+
+#software h5,  #software p{
+	margin-bottom: 10px;
+}
+
+/* Contact Page
+.....................*/
+
+.contact-list{
+  list-style: square;
+  margin: 0 0 22px 30px;
+}
+form {
+  margin-bottom: 22px;
+}
+input,
+textarea {
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.contact-form label {
+  color: #648880;
+  cursor: pointer;
+  font-weight: 400;
+}
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #c6c9cc;
+  border-radius: 5px;
+  color: #555;
+  display: block;
+  margin: 5px 0 24px 0;
+  padding: 5px 8px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+}
+.contact-form textarea {
+  height: 100px;
+  resize: vertical;
+  overflow: hidden;
+}
+
+/* Creative Work Links */
+
+.project-container {
+	margin-top: 120px;
+    height: 220px;
+    text-align: center;
+}
+.bg {
+	height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bg-books {
+	background:url(../assets/images/projects/books_unsplash.png);
+	background-size:cover;
+}
+
+.bg-monster {
+	background:url(../assets/images/projects/icecream.png);
+	background-size:cover;
+}
+
+.bg-shapes {
+	background:url(../assets/images/projects/second_life.png);
+	background-size:cover;
+}
+
+.project-container h3 {
+    overflow: hidden;
+    height: 95px;
+    font: 400 4.0625em "Raleway";
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.project-container h3 strong {
+	font-weight: 600;
+}
+
+.project-container .line {
+    position: relative;
+    display: block;
+    height: 1px;
+	width: 250px;
+    margin: 0 auto 30px;
+    background-color: #fff;
+	opacity: 0.3;
+}
+
+.project-container .line:before {
+    left: -60px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…B3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=);
+    background-size: 100%;
+    background-image: -webkit-gradient(linear,100% 50%,0 50%,color-stop(0,#fff),color-stop(100%,rgba(255,255,255,0)));
+    background-image: -moz-linear-gradient(right,#fff,rgba(255,255,255,0));
+    background-image: -webkit-linear-gradient(right,#fff,rgba(255,255,255,0));
+    background-image: linear-gradient(to left,#fff,rgba(255,255,255,0));
+}
+
+.project-container .line:after {
+    right: -60px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…B3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=);
+    background-size: 100%;
+    background-image: -webkit-gradient(linear,0 50%,100% 50%,color-stop(0,#fff),color-stop(100%,rgba(255,255,255,0)));
+    background-image: -moz-linear-gradient(left,#fff,rgba(255,255,255,0));
+    background-image: -webkit-linear-gradient(left,#fff,rgba(255,255,255,0));
+    background-image: linear-gradient(to right,#fff,rgba(255,255,255,0));
+}
+
+.project-container .line:after, .project-container .line:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 1px;
+    width: 60px;
+}
+
+.project-container p {
+    margin-bottom: 50px;
+    font: 400 .875em 'Lato';
+    text-transform: uppercase;
+}
+
+h3.blue strong, p.blue {
+    color: #1482ff;
+}
+
+h3.red strong, p.red {
+    color: #ea4c4c;
+}
+
+h3.purple strong, p.purple {
+    color: #a496ff;
+}
+
+a.blue, a.red, a.purple {
+    position: relative;
+    z-index: 4;
+    display: inline-block;
+    overflow: hidden;
+    width: 185px;
+    height: 38px;
+    text-align: center;
+    font: 400 .875em "Lato";
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.3);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+}
+
+.project-container a.blue:hover {
+    color: #fff;
+	border-color: #1482ff;
+	background: #1482ff;
+}
+
+.project-container a.purple:hover {
+    color: #fff;
+	border-color: #a496ff;
+	background: #a496ff;
+}
+
+.project-container a.red:hover {
+    color: #fff;
+	border-color: #ea4c4c;
+	background: #ea4c4c;
+}
+
+.project-container a .hover-progress{
+	position:absolute;
+	z-index:-1;
+	top:0;
+	left:0;
+	height:100%;
+	width:0;
+}
+
+.project-container a, .project-container a .hover-progress {
+    -moz-transition: all 350ms cubic-bezier(.165,.84,.44,1);
+    -o-transition: all 350ms cubic-bezier(.165,.84,.44,1);
+    -webkit-transition: all 350ms cubic-bezier(.165,.84,.44,1);
+    transition: all 350ms cubic-bezier(.165,.84,.44,1);
+}
+
+.project-container a:hover .hover-progress{
+	width:100%;
+}
+
+.description-container {
+	margin-top:50px;
+    height: 220px;
+    text-align: center;
+}
+
+.description h3 {
+    font: 400 3.5em 'Lato';
+	text-transform: uppercase;
+    color: #ccc;
+}
+
+.description p {
+    width: 500px;
+    margin: 0 auto;
+    font: 400 1em 'Lato';
+	color: #ccc;
+	text-transform: none;
+}
