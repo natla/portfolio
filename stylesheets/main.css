@@ -475,30 +475,33 @@ textarea {
     height: 220px;
     text-align: center;
 }
-.bg {
+
+.bg-books, .bg-monster, .bg-shapes, .bg-sims {
+	position: relative;
 	height: 500px;
     width: 100%;
     overflow: hidden;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*Parallax effect: */
+	background-attachment: fixed;
 }
 
 .bg-books {
-	background:url(../assets/images/projects/books_unsplash.png);
-	background-size:cover;
+	background-image:url(../assets/images/projects/books_unsplash.png);	
 }
 
 .bg-monster {
-	background:url(../assets/images/projects/icecream.png);
-	background-size:cover;
+	background-image:url(../assets/images/projects/icecream.png);
 }
 
 .bg-shapes {
-	background:url(../assets/images/projects/second_life.png);
-	background-size:cover;
+	background-image:url(../assets/images/projects/second_life.png);
 }
 
 .bg-sims {
-	background:url(../assets/images/projects/TheSims3_Screenshot.png);
-	background-size:cover;
+	background-image:url(../assets/images/projects/TheSims3_Screenshot.png);
 }
 
 .project-container h3 {
