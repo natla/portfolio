@@ -120,6 +120,12 @@ table {
 	display: flex;  
 	align-items: stretch;
 }
+
+.gallery img {
+	border: 0;
+	height: 165px;
+	width: 165px;
+}
  
  main {    
     width: 75%;   
@@ -152,9 +158,10 @@ ul.gallery-list li h2 a {
     transition: all 0.2s ease-in-out;
     font-size: 16px;
     text-align: center;
-    background: rgba(45, 62, 80, 0.45);
+    background: rgba(40, 58, 103, 0.55);
     padding-top: 150px;
 }
+
 ul.gallery-list li h2 span {
 	position: absolute;
     border: 2px solid #fff;
@@ -178,7 +185,7 @@ ul.gallery-list li:hover .img-title {
 /* Typography
 .................*/
 
-body{
+body {
 	background: #2d3e50;
 	color: #555;
 	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -427,7 +434,7 @@ color: #ea4c4c;
   ...................*/
 
 .logo {  
-  border-top: 4px solid #ea4c4c;
+  border-top: 4px solid #5f9ea0;
   padding: 40px 0 22px 0;
   font-size: 48px;
   font-weight: 100;
@@ -440,6 +447,10 @@ color: #ea4c4c;
 .tagline {
   margin: 66px 0 22px 0;
   text-align: right;
+}
+
+.primary-header .logo:hover {
+	border-top-color:  #ea4c4c;
 }
 
 /*  Navigation
