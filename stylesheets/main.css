@@ -404,6 +404,7 @@ color: #ea4c4c;
 	border-radius: 5px;
 	color: #ea4c4c;
 	background-color: #fff;
+	padding: 9px 0;
 }
 
 .btn-form {
@@ -427,7 +428,6 @@ color: #ea4c4c;
 
 .btn-form:hover  .hover-progress {	
 	width: 100%;
-    padding: 9px 30px;
 }
 
  /* Primary header
